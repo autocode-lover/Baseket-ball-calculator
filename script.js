@@ -2,6 +2,7 @@
 
 
 let homepoints = 0
+let guestpoints=0
 let heroValue = document.getElementById("home-score-display")
 let guestValue = document.getElementById("guest-score-display")
 
@@ -9,42 +10,35 @@ let guestValue = document.getElementById("guest-score-display")
 
 
 function oneHomeAddition(){
-    points = points + 1
-    homepoints
-
-    heroValue.textContent= points
+    homepoints +=1
+    heroValue.textContent= homepoints
 }
 
 // oneAddition()
 
 function twoHomeAddition(){
-     points = points + 2
-
-    heroValue.textContent= points
+     homepoints +=2
+    heroValue.textContent= homepoints
 }
 
 function threeHomeAddition(){
-    points = points + 3
-
-    heroValue.textContent= points
+    homepoints +=3
+    heroValue.textContent= homepoints
 }
 
 
 function oneGuestAddition(){
-    points = points + 1
-
-    guestValue.textContent= points
+    guestpoints +=1
+    guestValue.textContent= guestpoints
 }
 
 
 function twoGuestAddition(){
-     points = points + 2
-
-    guestValue.textContent= points
+     guestpoints +=2
+    guestValue.textContent= guestpoints
 }
 
 function threeGuestAddition(){
-    points = points + 3
-
-    guestValue.textContent= points
+      guestpoints +=3
+    guestValue.textContent= guestpoints
 }
